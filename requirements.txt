@@ -1,0 +1,18 @@
+Quick summary — libraries used in this project
+
+pandas: data loading, cleaning, grouping and merging (used throughout notebooks, e.g. task3.ipynb, task-2.ipynb).
+numpy: numerical helpers and array operations (used in data prep cells).
+nltk: NLP utilities and corpora (tokenizers/stopwords); used for text processing and required by some downstream tools.
+textblob: sentiment extraction (TextBlob polarity used for headline sentiment in task3.ipynb).
+scikit-learn (sklearn): text feature extraction (CountVectorizer) in chekc.ipynb.
+matplotlib (matplotlib.pyplot as plt): plotting and time-series visualizations.
+seaborn: density/histogram plots and nicer plotting styles.
+wordcloud: generating word clouds (seen in chekc.ipynb).
+Other libs referenced in notebooks or used by tools:
+ipykernel / jupyter (kernel and notebook integration).
+Standard library packages used in notebooks: sys, datetime, etc.
+Why these matter
+
+pandas, numpy, matplotlib, seaborn are for data wrangling + visualization.
+textblob (uses nltk) computes headline polarity which you aggregate per day and correlate with stock returns.
+sklearn and wordcloud are used for optional text-feature extraction and visualization in other notebook cells.
